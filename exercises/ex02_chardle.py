@@ -3,7 +3,7 @@
 __author__ : str = "730768561"
 
 def input_word() -> str: 
-    input_word : str = input("Enter a 5 character word: ")
+    input_word : str = input("Enter a 5-character word: ")
 
     if(len(input_word) == 5): 
         return input_word
@@ -47,6 +47,8 @@ def contains_char(word: str, letter: str) -> None:
 
     if(count == 0): 
         print(f"No instances of {letter} found in {word}")
+    elif(count == 1): # I didn't take into account if the count is 1 it'll be a separate condition to check for.
+        print(f"1 instance of {letter} found in {word}")
     else: 
         print(f"{count} instances of {letter} found in {word}")
 
