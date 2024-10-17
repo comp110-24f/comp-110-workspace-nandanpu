@@ -11,7 +11,7 @@ def input_guess(word_len : int) -> str:
 
 def contains_char(word : str, char : str) -> bool: 
     """This function checks whether a character is located in a word."""
-    assert len(char) == 1 # I forgot to include this piece of code and the function ran even when char has a length greater than 1.
+    assert len(char) == 1 # I forgot to include this piece of code and the function ran even when char has a length greater than 1. 
     word_index : int = 0
     while word_index < len(word): 
         if word[word_index] == char: 
@@ -50,7 +50,7 @@ def main(secret : str) -> None:
 
         if secret == guess:
             print(f"You won in {curr_turn}/6 turns!")
-            curr_turn = 7 # This is a neat trick to immediately end the while loop after the user guesses the word.
+            curr_turn = 7 # This is a trick to immediately end the while loop after the user guesses the word.
         elif curr_turn != 6:
             curr_turn += 1
         else:
