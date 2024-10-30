@@ -1,22 +1,23 @@
-"""Summing the elements of a list using different loops"""
-__author__ = "730768561"
+"""Sum the elements of a list"""
+__author__ = "730761368"
 
-def w_sum(vals : list[float]) -> float: 
-    i : int = 0 
+def w_sum(arr : list[float]) -> float: 
+    index : int = 0 
     sum : float = 0.0
-    while i < len(vals): 
-        sum += vals[i]
-        i += 1
+    while index < len(arr): 
+        sum += arr[index]
+        index += 1
     return sum 
 
-def f_sum(vals : list[float]) -> float: 
+def f_sum(arr : list[float]) -> float: 
     sum : float = 0.0
-    for item in vals: 
+    for item in arr: 
         sum += item
     return sum 
 
-def f_range_sum(vals : list[float]) -> float: 
+def f_range_sum(arr : list[float]) -> float: 
     sum : float = 0.0
-    for i in range(0, len(vals)): #At first, I didn't know if the second arguement for range was inclusive or exclusive, so I tried different arguments and realized that the second arguement is exclusive.
-        sum += vals[i] 
+    for index in range(0, len(arr)): 
+        sum += arr[index] 
     return sum 
+
